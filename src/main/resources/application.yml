@@ -1,0 +1,18 @@
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 20MB
+      max-request-size: 200MB
+server:
+  port: 8080
+  tomcat:
+    threads:
+      max: 10
+    max-connections: 10
+
+# -Dserver.tomcat.threads.max=8 -Dserver.tomcat.max-connections=8
+com:
+  luckyone:
+    ocr:
+      filePath: /images/
